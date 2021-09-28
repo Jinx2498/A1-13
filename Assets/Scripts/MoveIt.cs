@@ -12,10 +12,8 @@ public class MoveIt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         point1 = new Vector3(3, 1, 0);
         point2 = new Vector3(-3, 1, 0);
-        
     }
 
     // Update is called once per frame
@@ -23,6 +21,5 @@ public class MoveIt : MonoBehaviour
     {
         float time = Mathf.PingPong(Time.time*movementSpeed, 1);
         transform.position = Vector3.Lerp(point1, point2, time);
-        
     }
 }

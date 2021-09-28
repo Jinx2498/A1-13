@@ -20,7 +20,7 @@ public class ResizeIt : MonoBehaviour
         Size = transform.localScale;
         if (growing)
         {
-            if (Size.x <= 4f)
+            if (Size.x <= 4f)   // growing to 4x scale
             {
                 Size.x += Time.deltaTime;
                 Size.y += Time.deltaTime;
@@ -35,7 +35,7 @@ public class ResizeIt : MonoBehaviour
         }
         else
         {
-            if (Size.x >= 1f)
+            if (Size.x >= 1f)   // shrinking back to 1x scale
             {
                 Size.x -= Time.deltaTime;
                 Size.y -= Time.deltaTime;
